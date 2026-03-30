@@ -10,9 +10,7 @@ const noteInstance = axios.create({
 
 export interface FetchNotesResponse {
   notes: Note[];
-  totalNotes: number;
   totalPages: number;
-  currentPage: number;
 }
 
 export const fetchNotes = async (
